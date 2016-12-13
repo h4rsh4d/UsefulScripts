@@ -2,7 +2,7 @@
 dd if=/dev/zero of=large-file-1mb.txt count=1024 bs=1024
 
 # Create a 10MB file
-dd if=/dev/zero of=large-file-100mb.txt count=1024 bs=10240
+dd if=/dev/zero of=large-file-10mb.txt count=1024 bs=10240
 
 # Create a 100MB file
 dd if=/dev/zero of=large-file-100mb.txt count=1024 bs=102400
