@@ -18,3 +18,8 @@ dd if=/dev/zero of=large-file-100gb.txt count=1024 bs=104857600
 
 # Create a 1TB file (careful now...)
 dd if=/dev/zero of=large-file-1tb.txt count=1024 bs=1073741824
+
+# Please note, the above commands will create unreadable files and should be 
+# used for testing file size only. If you're looking for something that has
+# lines in it, use /dev/urandom instead of /dev/zero. You'll then be able to
+# read the number of lines in that file using `wc -l large-file.1mb.txt`
